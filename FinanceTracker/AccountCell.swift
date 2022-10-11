@@ -10,6 +10,7 @@ import SwiftUI
 struct AccountCell: View {
     
     let account:  Account
+    @State var isFavourite = false
     
     var body: some View {
         HStack(spacing: 8) {
@@ -25,6 +26,14 @@ struct AccountCell: View {
                     .font(.footnote)
                     .foregroundColor(Color(white: 0.4))
             }
+            Spacer()
+            Button {
+                isFavourite.toggle()
+            } label: {
+                Image(systemName: isFavourite ? "star.fill" : "star")
+                    .foregroundColor(isFavourite ? .yellow : Color(white: 0.4))
+            }
+
         }
         .frame(maxWidth: .infinity, alignment: .leading) // Permet de prendre toute la largeur de la vue
         .padding()
