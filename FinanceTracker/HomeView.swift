@@ -10,12 +10,30 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ScrollView {
-            VStack(spacing: 16) {
-                ForEach(previewAccounts) { account in
-                    AccountCell(account: account)
+            VStack {
+                VStack(spacing: 8) {
+                    Text("Solde total :")
+                    Text("\(String(format: "%.2F", previewAccounts.map { $0.amount }.reduce(0, +))) €")
+                        .font(.system(size: 32, weight: .bold))
                 }
+                VStack(alignment: .leading) {
+                    Text("Mes comptes")
+                        .font(.title2)
+                        .bold()
+                    if previewAccounts.count > 0 {
+                        VStack(spacing: 16) {
+                            ForEach(previewAccounts) { account in
+                                AccountCell(account: account)
+                            }
+                        }
+                    } else {
+                        Text("Ajouter un compte")
+                            .padding(32)
+                            .frame(maxWidth: .infinity)
+                    }
+                }
+                .padding(24)
             }
-            .padding(24)
         }
         .background(Color("grey"))
     }
