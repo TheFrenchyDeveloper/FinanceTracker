@@ -13,7 +13,7 @@ struct CurrencySelector: View {
     private let currencies = Currency.allCases
     
     // La devise sélectionnée
-    @State private var selectedCurrency: Currency = .euro
+    @Binding var selectedCurrency: Currency
     
     // Mode sélection
     @State private var isSelectedMode = false
@@ -40,7 +40,11 @@ struct CurrencySelector: View {
 }
 
 struct CurrencySelector_Previews: PreviewProvider {
+    
+    @State  static var previewSelectedCurrency = Currency.sterling
     static var previews: some View {
-        CurrencySelector()
+        CurrencySelector(selectedCurrency: $previewSelectedCurrency)
+            .padding()
+            .previewLayout(.sizeThatFits)
     }
 }
