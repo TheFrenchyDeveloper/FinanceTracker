@@ -12,9 +12,29 @@ struct AccountCreationView: View {
     @State private var selectedCurrency: Currency = .euro
     @State private var amount: String = ""
     @State private var selectedIcon: String = "icon_001"
+    @State private var accountName: String = ""
     
     var body: some View {
         VStack(spacing: 32) {
+            VStack {
+                Text(accountName == "" ? "Nouveau compte" : accountName)
+                    .font(.system(size: 32, weight: .bold))
+                    .padding(.top, 32)
+                Text("Solde: \(String(format: "%.2f", Float(amount) ?? 0))")
+                    .font(.system(size: 20, weight: .light))
+                    .foregroundColor(Color(white: 0.4))
+            }
+            VStack(alignment: .leading) {
+                Text("Nom")
+                    .font(.title2)
+                    .bold()
+                TextField("Ex : Paypal...", text: $accountName)
+                    .submitLabel(.done)
+                    .padding(12)
+                    .padding(.horizontal, 12)
+                    .background(Color.white)
+                    .cornerRadius(.infinity)
+            }
             VStack(alignment: .leading) {
                 Text("Icône")
                     .font(.title2)
@@ -38,6 +58,10 @@ struct AccountCreationView: View {
                 }
                 .background(Color.white)
                 .cornerRadius(.infinity)
+            }
+            Spacer()
+            MainButton(title: "Créer") {
+                // ....
             }
         }
         .padding()
