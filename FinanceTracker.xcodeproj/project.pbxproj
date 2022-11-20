@@ -20,6 +20,7 @@
 		0AAA595728F56066006CC6A6 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA595628F56066006CC6A6 /* AccountCell.swift */; };
 		0AAA595928F56820006CC6A6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA595828F56820006CC6A6 /* Account.swift */; };
 		0AAA595B28F812C5006CC6A6 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA595A28F812C5006CC6A6 /* PreviewData.swift */; };
+		0AB09E91292A2F9D00F60A2C /* AccountList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB09E90292A2F9D00F60A2C /* AccountList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0AAA595628F56066006CC6A6 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		0AAA595828F56820006CC6A6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		0AAA595A28F812C5006CC6A6 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		0AB09E90292A2F9D00F60A2C /* AccountList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				0A2E765529095D6700481342 /* IconSelector.swift */,
 				0A2E7657290966AF00481342 /* MainButton.swift */,
 				0A2E7659290968CF00481342 /* AccentButton.swift */,
+				0AB09E90292A2F9D00F60A2C /* AccountList.swift */,
 				0AAA594C28F54F17006CC6A6 /* Assets.xcassets */,
 				0AAA594E28F54F17006CC6A6 /* Preview Content */,
 			);
@@ -175,6 +178,7 @@
 				0AAA595728F56066006CC6A6 /* AccountCell.swift in Sources */,
 				0AAA594928F54F16006CC6A6 /* FinanceTrackerApp.swift in Sources */,
 				0A2E765629095D6700481342 /* IconSelector.swift in Sources */,
+				0AB09E91292A2F9D00F60A2C /* AccountList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

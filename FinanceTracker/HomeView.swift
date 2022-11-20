@@ -10,13 +10,14 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var isPresentingNewAccountScreen = false
+    @StateObject private var accountList = AccountList()
     
     var body: some View {
         ScrollView {
             VStack(spacing: 32) {
                 VStack(spacing: 8) {
                     Text("Solde total :")
-                    Text("\(String(format: "%.2F", previewAccounts.map { $0.amount }.reduce(0, +))) €")
+                    Text("\(String(format: "%.2F", accountList.accounts.map { $0.amount }.reduce(0, +))) €")
                         .font(.system(size: 32, weight: .bold))
                 }
                 .frame(maxWidth: .infinity)
@@ -31,7 +32,7 @@ struct HomeView: View {
                         .bold()
                     if previewAccounts.count > 0 {
                         VStack(spacing: 16) {
-                            ForEach(previewAccounts) { account in
+                            ForEach(accountList.accounts) { account in
                                 AccountCell(account: account)
                             }
                         }
@@ -46,7 +47,9 @@ struct HomeView: View {
         }
         .background(Color("grey"))
         .sheet(isPresented: $isPresentingNewAccountScreen) {
-            AccountCreationView()
+            AccountCreationView { newAccount in
+                accountList.accounts.append(newAccount)
+            }
         }
     }
 }
