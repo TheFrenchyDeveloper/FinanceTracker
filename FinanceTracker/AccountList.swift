@@ -15,5 +15,3 @@ class AccountList: ObservableObject {
         self.accounts = accounts
     }
 }
-
-
