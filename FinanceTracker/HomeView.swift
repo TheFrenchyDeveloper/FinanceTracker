@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var isPresentingNewAccountScreen = false
-    @StateObject private var accountList = AccountList()
+    @StateObject var accountList = AccountList()
     
     var body: some View {
         NavigationView {
@@ -34,6 +34,7 @@ struct HomeView: View {
                                 ForEach(accountList.accounts) { account in
                                     NavigationLink {
                                         AccountDetailView(account: account)
+                                            .environmentObject(accountList)
                                     } label: {
                                         AccountCell(account: account)
                                     }

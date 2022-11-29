@@ -16,6 +16,7 @@ struct AccentButton: View {
     var body: some View {
         Button(action: action) {
             Text(title)
+                .frame(width: 300)
                 .foregroundColor(.black)
                 .font(.callout)
                 .fontWeight(.semibold)
