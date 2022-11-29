@@ -16,6 +16,7 @@
 		0A5FC39E292BD5FA0097788C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FC39D292BD5FA0097788C /* Transaction.swift */; };
 		0A5FC3A0292BD6680097788C /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FC39F292BD6680097788C /* TransactionCell.swift */; };
 		0A5FC3A2292BE2750097788C /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FC3A1292BE2750097788C /* AccountDetailView.swift */; };
+		0A6DA9D0293645970019B992 /* AccountSelectorMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6DA9CF293645970019B992 /* AccountSelectorMenu.swift */; };
 		0AAA594928F54F16006CC6A6 /* FinanceTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA594828F54F16006CC6A6 /* FinanceTrackerApp.swift */; };
 		0AAA594B28F54F16006CC6A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA594A28F54F16006CC6A6 /* HomeView.swift */; };
 		0AAA594D28F54F17006CC6A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA594C28F54F17006CC6A6 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		0A5FC39D292BD5FA0097788C /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		0A5FC39F292BD6680097788C /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		0A5FC3A1292BE2750097788C /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
+		0A6DA9CF293645970019B992 /* AccountSelectorMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSelectorMenu.swift; sourceTree = "<group>"; };
 		0AAA594528F54F16006CC6A6 /* FinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAA594828F54F16006CC6A6 /* FinanceTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTrackerApp.swift; sourceTree = "<group>"; };
 		0AAA594A28F54F16006CC6A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				0AAA594828F54F16006CC6A6 /* FinanceTrackerApp.swift */,
 				0AAA594A28F54F16006CC6A6 /* HomeView.swift */,
+				0A6DA9CF293645970019B992 /* AccountSelectorMenu.swift */,
 				0AAA595A28F812C5006CC6A6 /* PreviewData.swift */,
 				0AAA595628F56066006CC6A6 /* AccountCell.swift */,
 				0AAA595828F56820006CC6A6 /* Account.swift */,
@@ -183,6 +186,7 @@
 				0AAA595B28F812C5006CC6A6 /* PreviewData.swift in Sources */,
 				0AAA594B28F54F16006CC6A6 /* HomeView.swift in Sources */,
 				0A2E7658290966AF00481342 /* MainButton.swift in Sources */,
+				0A6DA9D0293645970019B992 /* AccountSelectorMenu.swift in Sources */,
 				0A5FC39E292BD5FA0097788C /* Transaction.swift in Sources */,
 				0A38FDFC2907032700111BBE /* CurrencySelector.swift in Sources */,
 				0AAA595928F56820006CC6A6 /* Account.swift in Sources */,

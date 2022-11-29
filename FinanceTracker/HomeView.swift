@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var isPresentingNewAccountScreen = false
-    @StateObject private var accountList = AccountList(accounts: previewAccounts)
+    @StateObject private var accountList = AccountList()
     
     var body: some View {
         NavigationView {
@@ -22,11 +22,9 @@ struct HomeView: View {
                             .font(.system(size: 32, weight: .bold))
                     }
                     .frame(maxWidth: .infinity)
-                    
                     AccentButton(title: "+ account", color: Color("orange")) {
                         isPresentingNewAccountScreen = true
                     }
-                    
                     VStack(alignment: .leading) {
                         Text("Mes comptes")
                             .font(.title2)
